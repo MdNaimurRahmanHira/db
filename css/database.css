@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #3A648B;
+    --secondary-color: #EAEDFA;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: white;
+}
+
+.container {
+    width: 1140px;
+    margin: auto;
+    display: block;
+    padding: 0px 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p {
+    font-size: 16px;
+}
+
+/* Breadcrumb area */
+.breadcrumb-section {
+    padding: 35px 0px;
+    background: #3A648B;
+}
+
+.breadcrumb-section .breadcrumb-wrapper h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+
+}
+
+
+
+/* Database paragraph area  */
+.database-para-section {
+    padding: 20px 0px;
+}
+
+.database-para-section p {
+    margin-bottom: 10px;
+}
+
+/* database-card-area */
+.accordion {
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.16);
+    margin-bottom: 40px;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.accordion-button img {
+    width: 40px;
+    margin-right: 20px;
+}
+
+.accordion-button {
+    color: var(--primary-color);
+    font-size: 18px;
+    font-weight: 600;
+}
+.accordion-body p{
+    margin-bottom: 0px;
+}
+
+.accordion-button:not(.collapsed) {
+    color: var(--primary-color);
+    background-color: #e7f1ff;
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .125);
+}
+
+
+.accordion .read-more-btn {
+    border: none;
+    outline: none;
+    background: none;
+    color: blue;
+    display: inline;
+}
+
+.accordion-button::after {
+    content: "";
+    background-image: url(../img/Icon\ awesome-chevron-down.svg);
+    transition: .3s;
+}
+
+.accordion-button:not(.collapsed)::after {
+    content: "";
+    background-image: url(../img/Icon\ awesome-chevron-down.svg);
+    transform: rotate(180deg);
+}
+
+.src-text {
+    display: none ;
+}
+.src-text.active{
+    display: inline;
+}
+
